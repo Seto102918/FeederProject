@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.video.VideoFragment">
+
+    <com.longdo.mjpegviewer.MjpegView
+        android:id="@+id/mjpegid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="20dp"
+        android:contentDescription="@string/streamviewer"
+        android:onClick="startService" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/start"
+            android:textSize="14dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/fourth"
+            android:text="@string/start_service"
+            android:textColor="@color/secondary" />
+
+
+        <Button
+            android:id="@+id/stop"
+            android:textSize="14dp"
+            android:layout_width="140dp"
+            android:textColor="@color/secondary"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/fourth"
+            android:text="@string/stop_service" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/third"
+            android:src="@drawable/ic_baseline_audiotrack_24" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

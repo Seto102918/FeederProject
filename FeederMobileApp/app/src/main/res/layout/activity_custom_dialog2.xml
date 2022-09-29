@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        android:alpha="0.2"/>
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/popup">
+
+        <RelativeLayout
+            android:id="@+id/RelTimeChoose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/third">
+
+
+            <TextView
+                android:id="@+id/txtpilihBerat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserratbold"
+                android:text="Jumlah Makanan / Refill \n (dalam gr)"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpilihBerat"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:checked="true"
+                    android:fontFamily="@font/montserratlight"
+                    android:text="50"
+                    android:textColor="@color/secondary"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:fontFamily="@font/montserratlight"
+                    android:text="100"
+                    android:textColor="@color/secondary"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:fontFamily="@font/montserratlight"
+                    android:text="200"
+                    android:textColor="@color/secondary"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginHorizontal="7dp"
+                    android:fontFamily="@font/montserratlight"
+                    android:text="300"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/secondary"
+                    android:textSize="11sp" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/RelTimeChoose"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp">
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/fourth"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="Save"
+                android:textColor="@color/secondary" />
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/third"
+                android:fontFamily="@font/montserratsemibold"
+                android:text="Back"
+                android:textColor="@color/secondary" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

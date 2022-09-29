@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context=".ui.home.HomeFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/small_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontalView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape2"
+        android:backgroundTint="@color/fourth"
+        android:fontFamily="@font/montserratbold"
+        android:padding="10dp"
+        android:text="@string/tap_on_this_text_to_open_url_and_look_closer"
+        android:textAlignment="center"
+        android:textColor="@color/secondary"
+        android:textSize="11sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_weighttitle"
+        android:layout_marginTop="20dp">
+
+
+        <RelativeLayout
+            android:id="@+id/idk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Webview"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:minWidth="320dp"
+                android:layout_marginHorizontal="20dp"
+                app:cardBackgroundColor="@color/secondary"
+                app:cardCornerRadius="20dp">
+
+                <WebView
+                    android:id="@+id/webview_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="Weight of Food Bowl in Grams Today"
+                    android:textColor="@color/secondary"
+                    android:textSize="11sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_Webview2"
+                android:layout_width="match_parent"
+                android:layout_height="275dp"
+                android:minWidth="320dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@id/cardView_Webview"
+                app:cardCornerRadius="20dp">
+
+                <WebView
+                    android:id="@+id/webview_weight2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserratbold"
+                    android:text="Weight of Food Bowl in Grams Yesterday"
+                    android:textColor="@color/secondary"
+                    android:textSize="11sp" />
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+
+
+    <TextView
+        android:id="@+id/text_weighttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:paddingTop="7.5dp"
+        android:text="@string/food_section"
+        android:textColor="@color/secondary"
+        android:textSize="28sp" />
+
+    <ImageButton
+        android:id="@+id/button_logout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shape2"
+        android:backgroundTint="@color/fourth"
+        android:src="@drawable/ic_baseline_logout_24"
+        android:text="@string/log_out"
+        android:contentDescription="@string/log_out" />
+
+    <RelativeLayout
+        android:id="@+id/ReloutJadwalBIG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/small_text"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape2"
+        android:backgroundTint="@color/third">
+
+        <TextView
+            android:id="@+id/txtsch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="@string/schedule"
+            android:textColor="@color/secondary"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:id="@+id/ReloutJadwal1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/txtsch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/fifth">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-2dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/txtJAM1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="HR:"
+                    android:textColor="@color/secondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtMNT1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txtJAM1"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="MNT"
+                    android:textColor="@color/secondary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ReloutJadwal2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/ReloutJadwal1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/fifth">
+
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-2dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/txtJAM2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="HR:"
+                    android:textColor="@color/secondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtMNT2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txtJAM2"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="MNT"
+                    android:textColor="@color/secondary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ReloutJadwal3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@+id/ReloutJadwal2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"
+            android:backgroundTint="@color/fifth">
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-2dp"
+                tools:checked="false" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/txtJAM3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="HR:"
+                    android:textColor="@color/secondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txtMNT3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txtJAM3"
+                    android:fontFamily="@font/montserratmedium"
+                    android:text="MNT"
+                    android:textColor="@color/secondary"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ReloutWPR"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/ReloutJadwalBIG"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/shape2"
+        android:backgroundTint="@color/third">
+
+        <TextView
+            android:id="@+id/txtRefill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="Weight per Refill"
+            android:textColor="@color/secondary"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ReloutWPR2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ReloutWPR"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/refilltext"
+        android:backgroundTint="@color/fifth">
+
+        <TextView
+            android:id="@+id/txtRefill2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="20dp"
+            android:fontFamily="@font/montserratmedium"
+            android:text="Food Dispenser Is Empty"
+            android:textColor="@color/secondary"
+            android:textSize="10sp" />
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/pilihBerat"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/ReloutJadwalBIG"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/refillcircle"
+        app:cardBackgroundColor="@color/fourth"
+        app:cardCornerRadius="80dp">
+
+        <TextView
+            android:id="@+id/JumlahRefillText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="50gr"
+            android:textAlignment="center"
+            android:textColor="@color/secondary"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+</ScrollView>
